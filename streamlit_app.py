@@ -44,4 +44,4 @@ if st.button('Submit Order'):
 
 import requests
 fruitvice_response = requests.get("https://fruitvice.com/api/fruit/watermelon")
-st.text(fruitvice_response)
+st.text(fruitvice_response.json())
