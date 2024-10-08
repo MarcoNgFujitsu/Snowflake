@@ -41,4 +41,7 @@ if st.button('Submit Order'):
         
     # else:
     #     st.write('You have selected', len(option), ' fruits. Only can select up to 5 fruits')
-        
+
+import requests
+fruitvice_response = requests.get("https://fruitvice.com/api/fruit/watermelon")
+st.text(fruitvice_response)
